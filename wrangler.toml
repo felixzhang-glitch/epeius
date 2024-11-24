@@ -1,4 +1,5 @@
 name = "epeius"
 main = "src/worker.js"
+account_id = "869c4374edb19b92a1156929a3c2c3ff"
 compatibility_date = "2024-11-24"
 workers_dev = true

@@ -41,12 +41,7 @@ const worker_default = {
 
                 switch (url.pathname) {
                     case "/link": {
-                        // Optional password protection for `/link` endpoint
-                        const linkPassword = "your-link-password"; // Replace this with your secure password
-                        if (url.searchParams.get("key") !== linkPassword) {
-                            return new Response("Forbidden", { status: 403 });
-                        }
-
+                        // Remove password protection
                         const host = request.headers.get('Host');
                         return new Response(
                             `trojan://ca110us@${host}:443/?type=ws&host=${host}&security=tls`,

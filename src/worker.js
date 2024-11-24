@@ -1,6 +1,6 @@
 // src/worker.js
 import { connect } from "cloudflare:sockets";
-let sha224Password = 'cee36891a66de1b8e7bed8a0bb480b1101554d4287aaef31d16d7b7b';
+let sha224Password = "cee36891a66de1b8e7bed8a0bb480b1101554d4287aaef31d16d7b7b";
 let proxyIP = "";
 
 if (!isValidSHA224(sha224Password)) {
